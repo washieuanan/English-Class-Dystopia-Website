@@ -1,0 +1,265 @@
+button {
+  margin-top: 3rem;
+}
+
+a {
+	color: white;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #EC4548;
+	text-decoration: underline;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+  background: 
+    /* top, transparent red, faked with gradient */ 
+  linear-gradient(
+    rgba(45,23,44, 0.85) 0%, 
+    rgba(128,23,56, 0.85) 100%
+  ),
+  /* bottom, image */
+  url("../img/moshed4.gif") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+/*.background-gradient {
+  background: 
+  linear-gradient(
+    rgba(45,23,44, 0.75) 0%, 
+    rgba(128,23,56, 0.75) 100%
+  ),
+  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}*/
+
+.card-row {
+  margin-top: 4rem;
+}
+
+.btn-primary {
+ /*   background-color: green;*/
+}
+
+h1 {
+  color: #ffffff;
+  margin-top: 2rem;
+  font-family: monospace;
+  font-size: 5rem;
+  font-weight:  500;
+}
+
+h2 {
+  color: #fff;
+  font-family: "inconsolata",monospace;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+h2.tagline {
+  margin-bottom: 2rem;
+}
+
+h5 {
+  color: white;
+  font-family: monospace;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+p.instructions {
+  color: white;
+  margin-top: 4rem;
+}
+
+p {
+  color: white;
+  font-family: monospace;
+  font-size: 1.3rem;
+}
+
+p.card-text {
+	padding-right: 1em;
+}
+
+#wrenchScript {
+	padding-right: 2em;
+}
+
+.card {
+	height: 19rem;
+	border-color: transparent;
+	border-radius: 0;
+	-webkit-box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.28);
+	-moz-box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.28);
+	box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.28);
+  	margin-top: 4rem;
+  	background-color: #2d172c;
+}
+
+.card:before {
+  content: "";
+  border-bottom: 100px solid #2d172c;
+  border-left: 0px solid #2d172c;
+  border-right: 100px solid transparent;
+  height: 0;
+  width: inherit;
+  position: relative;
+  top: -100px;
+  left: -1px;
+}
+
+.btn-primary {
+	background-color: #2D142C;
+	border-color: #2D142C;
+	border-radius: 0px;
+  -webkit-box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.28);
+  -moz-box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.28);
+  box-shadow: 10px 10px 46px -8px rgba(0,0,0,0.28);
+  font-family: monospace;
+}
+
+.btn-primary:hover {
+	background-color: #EC4548;
+	border-color: #EC4548;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+	background-color: #EC4548;
+	border-color: #EC4548;
+}
+
+.btn-primary:focus {
+	background-color: #EC4548;
+	border-color: #EC4548;
+}
+
+p.card-text {
+	padding-top: 1rem;
+}
+
+#shuffle-button {
+	margin-top: 2rem;
+}
+
+.card-img-top {
+  height: 70px;
+  width: 117px;
+  position: absolute;
+  top: -80px;
+}
+
+.card-content {
+  top: 2rem;
+  position: absolute;
+}
+
+.triangle-top {
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 0rem;
+  top: -100px;
+  border-left: 0px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid white;
+}
+
+.triangle-bottom {
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: -1px;
+  top: 0px;
+  border-left: 100px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid white;
+  border-top: 100px solid white;
+}
+
+/*WORLD STYLING*/
+
+.world .triangle-top {
+	border-bottom-color: white;
+}
+.world .triangle-bottom {
+	border-top-color: #801739;
+	border-bottom-color: #801739;
+}
+
+/*CONTROL STYLING*/
+
+.card.control {
+	background-color: #EC4548;
+}
+
+.card.control:before{
+	border-bottom-color: #EC4548;
+	border-left-color: #EC4548;
+}
+
+.control .triangle-top {
+	border-bottom-color: white;
+}
+.control .triangle-bottom {
+	border-top-color: #501034;
+	border-bottom-color: #501034;
+}
+
+.control p {
+	color: white;
+}
+
+.control h5 {
+	color: white;
+}
+
+/*TASK STYLING*/
+.card.task {
+	background-color: white;
+}
+
+.card.task:before{
+	border-bottom-color: white;
+	border-left-color: white;
+}
+
+.task .triangle-top {
+	border-bottom-color: #EC4548;
+}
+.task .triangle-bottom {
+	border-top-color: #501034;
+	border-bottom-color: #501034;
+}
+
+.task p {
+	color: #2d172c;
+}
+
+.task h5 {
+	color: #2d172c;
+}
+
+p.ixda-link {
+	margin-top: 2rem;
+  text-align: right;
+}
+
+img.ixda_logo {
+  width: 10rem;
+  margin-bottom: 3rem;
+}
